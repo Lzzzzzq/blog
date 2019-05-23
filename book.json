@@ -1,0 +1,34 @@
+{
+  "title": "Lzzzzzq - Blog",
+  "author": "lzzzzzq",
+  "description": "",
+  "language": "zh-hans",
+  "plugins": [
+    "prism",
+    "-highlight",
+    "copy-code-button",
+    "search-pro",
+    "-search",
+    "-lunr",
+    "toggle-list",
+    "splitter",
+    "-sharing",
+    "tbfed-pagefooter",
+    "anchors"
+  ],
+  "pluginsConfig": {
+    "prism": {
+      "css": [
+        "prismjs/themes/prism-okaidia.css"
+      ],
+      "lang": {
+        "shell": "bash"
+      }
+    },
+    "tbfed-pagefooter": {
+      "copyright":"Copyright &copy lzzzzzq 2019",
+      "modify_label": "该文件修订时间：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    }
+  }
+}

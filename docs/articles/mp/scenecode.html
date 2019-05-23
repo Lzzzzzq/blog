@@ -1,0 +1,373 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>跳回 APP 场景值获取 · Lzzzzzq - Blog</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="lzzzzzq">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-list/index.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="tabbar.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../js/">
+            
+                <a href="../js/">
+            
+                    
+                    js
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../js/prototype.html">
+            
+                <a href="../js/prototype.html">
+            
+                    
+                    proto 和 prototype 的关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../nodejs/">
+            
+                <a href="../nodejs/">
+            
+                    
+                    nodejs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../nodejs/koa2middleware.html">
+            
+                <a href="../nodejs/koa2middleware.html">
+            
+                    
+                    koa2 的中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    微信小程序相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="scenecode.html">
+            
+                <a href="scenecode.html">
+            
+                    
+                    跳回 APP 场景值获取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="tabbar.html">
+            
+                <a href="tabbar.html">
+            
+                    
+                    自定义 tabbar 解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >跳回 APP 场景值获取</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8DF3;&#x56DE;-app-&#x573A;&#x666F;&#x503C;&#x83B7;&#x53D6;"><a name="&#x8DF3;&#x56DE;-app-&#x573A;&#x666F;&#x503C;&#x83B7;&#x53D6;" class="plugin-anchor" href="#&#x8DF3;&#x56DE;-app-&#x573A;&#x666F;&#x503C;&#x83B7;&#x53D6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8DF3;&#x56DE; APP &#x573A;&#x666F;&#x503C;&#x83B7;&#x53D6;</h1>
+<p><a name="e6cefb85"></a></p>
+<h3 id="&#x9700;&#x6C42;"><a name="&#x9700;&#x6C42;" class="plugin-anchor" href="#&#x9700;&#x6C42;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9700;&#x6C42;</h3>
+<ul>
+<li>&#x5C0F;&#x7A0B;&#x5E8F;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x65F6;&#xFF0C;&#x573A;&#x666F;&#x503C;&#x4E3A; 1001&#xFF0C;&#x4E0D;&#x663E;&#x793A;&#x8DF3;&#x56DE; APP &#x6309;&#x94AE;</li>
+<li>&#x5C0F;&#x7A0B;&#x5E8F;&#x901A;&#x8FC7; APP &#x5206;&#x4EAB;&#x5361;&#x7247;&#x6253;&#x5F00;&#x65F6;&#xFF0C;&#x573A;&#x666F;&#x503C;&#x4E3A; 1036 &#xFF0C;&#x663E;&#x793A;&#x8DF3;&#x56DE; APP &#x6309;&#x94AE;</li>
+</ul>
+<p><a name="5dc99f6e"></a></p>
+<h3 id="&#x95EE;&#x9898;"><a name="&#x95EE;&#x9898;" class="plugin-anchor" href="#&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;</h3>
+<ul>
+<li>&#x6839;&#x636E;&#x6587;&#x6863;&#x4E2D;&#x6240;&#x8BF4;&#xFF0C;onShow &#x7684;&#x56DE;&#x8C03;&#x53C2;&#x6570;&#x4E2D;&#x4F1A;&#x5E26;&#x6709;&#x5F53;&#x524D;&#x573A;&#x666F;&#x503C;&#xFF0C;&#x7ED3;&#x679C;&#x53D1;&#x73B0; Page &#x7684; onShow &#x6CA1;&#x6709;&#x56DE;&#x8C03;&#x53C2;&#x6570;</li>
+<li>&#x5728; Page &#x5185;&#x4F7F;&#x7528; wx.getLaunchOptionsSync &#x83B7;&#x53D6;&#x5230;&#x7684;&#x573A;&#x666F;&#x503C;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#xFF0C;&#x5982;&#x679C;&#x7B2C;&#x4E00;&#x6B21;&#x8FDB;&#x5165;&#x5C0F;&#x7A0B;&#x5E8F;&#x65F6;&#xFF0C;&#x573A;&#x666F;&#x503C;&#x4E3A; 1036&#xFF0C;&#x90A3;&#x4E48;&#x540E;&#x9762;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x573A;&#x666F;&#x503C;&#x90FD;&#x4E3A; 1036&#xFF0C;&#x5BFC;&#x81F4;&#x5373;&#x4F7F;&#x4ECE;&#x5FAE;&#x4FE1;&#x5185;&#x5206;&#x4EAB;&#x7684;&#x5C0F;&#x7A0B;&#x5E8F;&#x5361;&#x7247;&#x6253;&#x5F00;&#xFF0C;&#x4E5F;&#x540C;&#x6837;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x4ECE; APP &#x5206;&#x4EAB;&#x8FC7;&#x6765;&#x7684;</li>
+<li>&#x5728; Page &#x4E2D;&#x6DFB;&#x52A0; onAppShow &#x4E8B;&#x4EF6;&#xFF0C;&#x56DE;&#x8C03;&#x53C2;&#x6570;&#x4E2D;&#x7684;&#x573A;&#x666F;&#x503C;&#x4E3A;&#x6B63;&#x786E;&#x573A;&#x666F;&#x503C;&#xFF0C;&#x7136;&#x800C;&#x6267;&#x884C; setData &#x540E;&#xFF0C;&#x6570;&#x636E;&#x66F4;&#x65B0;&#xFF0C;&#x4F46;&#x662F;&#x89C6;&#x56FE;&#x4E0D;&#x5237;&#x65B0;&#xFF0C;&#x5DF2;&#x6392;&#x9664; this &#x6307;&#x5411;&#x9519;&#x8BEF;&#x7684;&#x95EE;&#x9898;</li>
+</ul>
+<p><a name="81c1dff6"></a></p>
+<h3 id="&#x89E3;&#x51B3;&#x529E;&#x6CD5;"><a name="&#x89E3;&#x51B3;&#x529E;&#x6CD5;" class="plugin-anchor" href="#&#x89E3;&#x51B3;&#x529E;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89E3;&#x51B3;&#x529E;&#x6CD5;</h3>
+<p>&#x6587;&#x6863;&#x63CF;&#x8FF0;&#x6709;&#x8BEF;&#xFF0C;onShow &#x53EA;&#x6709;&#x5728; app.js &#x5185;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5C0F;&#x7A0B;&#x5E8F;&#x7684; App &#x4E0B;&#xFF0C;&#x624D;&#x4F1A;&#x6709;&#x56DE;&#x8C03;&#x53C2;&#x6570;&#xFF0C;&#x6B64;&#x65F6;&#x7684;&#x56DE;&#x8C03;&#x53C2;&#x6570;&#x4E3A;&#x6B63;&#x786E;&#x7684;&#x56DE;&#x8C03;&#x53C2;&#x6570;&#xFF0C;&#x5C06;&#x8BE5;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x5728; App &#x7684;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x5404; Page &#x7684; onShow &#x4E2D;&#xFF0C;&#x901A;&#x8FC7; getApp() &#x6765;&#x83B7;&#x53D6;&#x573A;&#x666F;&#x503C;&#x5E76;&#x8FDB;&#x884C; setData &#x64CD;&#x4F5C;&#xFF0C;&#x6570;&#x636E;&#x66F4;&#x65B0;&#xFF0C;&#x89C6;&#x56FE;&#x66F4;&#x65B0;</p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; lzzzzzq 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-05-23 16:38:43
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 微信小程序相关">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="tabbar.html" class="navigation navigation-next " aria-label="Next page: 自定义 tabbar 解决方案">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"跳回 APP 场景值获取","level":"1.4.1","depth":2,"next":{"title":"自定义 tabbar 解决方案","level":"1.4.2","depth":2,"path":"articles/mp/tabbar.md","ref":"articles/mp/tabbar.md","articles":[]},"previous":{"title":"微信小程序相关","level":"1.4","depth":1,"path":"articles/mp/README.md","ref":"articles/mp/README.md","articles":[{"title":"跳回 APP 场景值获取","level":"1.4.1","depth":2,"path":"articles/mp/scenecode.md","ref":"articles/mp/scenecode.md","articles":[]},{"title":"自定义 tabbar 解决方案","level":"1.4.2","depth":2,"path":"articles/mp/tabbar.md","ref":"articles/mp/tabbar.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["prism","-highlight","copy-code-button","search-pro","-search","-lunr","toggle-list","splitter","-sharing","tbfed-pagefooter","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy lzzzzzq 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"shell":"bash"}},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"toggle-list":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"lzzzzzq","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Lzzzzzq - Blog","language":"zh-hans","gitbook":"*","description":""},"file":{"path":"articles/mp/scenecode.md","mtime":"2019-05-23T08:38:43.471Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-23T08:43:54.559Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-list/index.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
