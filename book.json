@@ -4,7 +4,7 @@
   "description": "",
   "language": "zh-hans",
   "styles": {
-    "website": "/assets/css/main.css"
+    "website": "assets/css/main.css"
   },
   "plugins": [
     "prism",
