@@ -6,7 +6,9 @@
   * [__proto__ 和 prototype 的关系](articles/js/prototype.md)
 
 * [React](articles/react/README.md)
-  * [[转]为什么我们要写 super(props)](articles/react/why-do-we-write-super-props.md)
+  * [[转] 为什么我们要写 super(props)](articles/react/why-do-we-write-super-props.md)
+  * [[转] React 如何区分 Class 和 Function](articles/react/how-does-react-tell-a-class-from-a-function.md)
+  * [[转] setState 如何知道该做什么](articles/react/how-does-setstate-know-what-to-do.md)
 
 * [nodejs](articles/nodejs/README.md)
   * [koa2 的中间件](articles/nodejs/koa2middleware.md)
