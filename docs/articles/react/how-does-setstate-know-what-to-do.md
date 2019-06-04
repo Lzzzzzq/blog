@@ -1,5 +1,7 @@
 # setState 如何知道该做什么？
 
+本文转自：[https://overreacted.io/zh-hans/how-does-setstate-know-what-to-do/](https://overreacted.io/zh-hans/how-does-setstate-know-what-to-do/)
+
 当你在组件中调用`setState`的时候，你认为发生了些什么？
 
 ```jsx
