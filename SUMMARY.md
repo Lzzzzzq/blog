@@ -5,6 +5,9 @@
 * [js](articles/js/README.md)
   * [__proto__ 和 prototype 的关系](articles/js/prototype.md)
 
+* [React](articles/react/README.md)
+  * [[转]为什么我们要写 super(props)](articles/react/why-do-we-write-super-props.md)
+
 * [nodejs](articles/nodejs/README.md)
   * [koa2 的中间件](articles/nodejs/koa2middleware.md)
 

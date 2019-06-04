@@ -1,0 +1,34 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "记录各种鬼东西",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "gitbook-plugin-anchors": "^0.7.1",
+    "gitbook-plugin-copy-code-button": "^0.0.2",
+    "gitbook-plugin-prism": "^2.4.0",
+    "gitbook-plugin-search-pro": "^2.0.2",
+    "gitbook-plugin-tbfed-pagefooter": "^0.0.1",
+    "gitbook-plugin-splitter": "^0.0.8",
+    "gitbook-plugin-toggle-list": "^0.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "gitbook serve",
+    "build": "gitbook build ./ ./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lzzzzzq/blog.git"
+  },
+  "keywords": [],
+  "author": "Lzzzzzq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lzzzzzq/blog/issues"
+  },
+  "homepage": "https://github.com/Lzzzzzq/blog#readme"
+}
