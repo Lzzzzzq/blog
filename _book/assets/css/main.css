@@ -1,0 +1,25 @@
+
+.articles li {
+  box-sizing: border-box;
+  border-left: 1px solid rgb(230, 236, 241);
+}
+
+.chapter {
+  color: rgb(92, 105, 117);
+}
+
+.articles .chapter:not(.active) a {
+  color: #9daab6 !important;
+}
+
+.chapter:not(.active) > a {
+  border-top: 1px solid transparent !important;
+  border-bottom: 1px solid transparent !important;
+}
+
+.chapter.active > a {
+  box-sizing: border-box;
+  background-color: #fff !important;
+  border-top: 1px solid rgb(230, 236, 241) !important;
+  border-bottom: 1px solid rgb(230, 236, 241) !important;
+}
