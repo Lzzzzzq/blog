@@ -4,6 +4,7 @@
 
 * [js](articles/js/README.md)
   * [__proto__ 和 prototype 的关系](articles/js/prototype.md)
+  * [函数参数是值传递还是引用传递](articles/js/function-parameter-processing.md)
 
 * [React](articles/react/README.md)
   * [[转] 将 React 作为 UI 运行时](articles/react/react-as-a-ui-runtime.md)

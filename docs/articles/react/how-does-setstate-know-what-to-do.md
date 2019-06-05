@@ -15,7 +15,8 @@ class Button extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick() {
-    this.setState({ clicked: true });  }
+    this.setState({ clicked: true });  
+  }
   render() {
     if (this.state.clicked) {
       return <h1>Thanks</h1>;
